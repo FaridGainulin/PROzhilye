@@ -1,0 +1,105 @@
+.details-section
+  // background-image: url('../images/details-section-bg.jpg')
+  // background-repeat: no-repeat
+  // background-position: center
+  // background-size: cover
+  background: linear-gradient(169.80deg, rgb(225, 225, 225) 23.676%,rgb(255, 255, 255) 84.968%)
+  overflow hidden
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0 0
+    color: $color-carbonic
+    +above($breakpoints.sm)
+      padding 50px 0
+    +above($breakpoints.md)
+      padding 70px 0
+    +above($breakpoints.xxl)
+      padding 90px 0 111px
+
+  &__title,
+  &__sub-title
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+
+  &__sub-title
+    padding 10px 0 15px
+    +above($breakpoints.sm)
+      padding 20px 0
+    +above($breakpoints.md)
+      padding 30px 0
+    +above($breakpoints.xxl)
+      padding 40px 0
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: column
+      gap: 12px
+    +above($breakpoints.md)
+      gap: 15px
+    +above($breakpoints.xxl)
+      gap: 20px
+
+  &__card
+    width 280px !important
+    display: flex
+    align-items: center
+    gap: 10px
+    +above($breakpoints.sm)
+      width max-content !important
+    +above($breakpoints.md)
+      gap: 12px
+    +above($breakpoints.xxl)
+      gap: 15px
+
+  &__card-dot
+    width 3px
+    height: 3px
+    border-radius: 50%
+    background-color $color-carbonic
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 6px
+    +above($breakpoints.sm)
+      margin-top 30px
+      flex-direction: row
+      gap: 10px
+    +above($breakpoints.md)
+      margin-top 45px
+      gap: 12px
+    +above($breakpoints.xxl)
+      margin-top 63px
+      gap: 14px
+    & > *
+      width 280px !important
+      +above($breakpoints.sm)
+        width 185px !important
+      +above($breakpoints.md)
+        width 240px !important
+      +above($breakpoints.xxl)
+        width 280px !important
+
+  &__img
+    position relative
+    width 250px
+    height: auto
+    margin: 15px 0 0px 37px;
+    +above($breakpoints.sm)
+      margin 0
+      position: absolute
+      z-index -1
+      width: 440px;
+      right: -101px;
+      bottom: 0;
+    +above($breakpoints.md)
+      width: 590px;
+      right: -113px;
+    +above($breakpoints.xxl)
+      width 750px
+      right: -113px

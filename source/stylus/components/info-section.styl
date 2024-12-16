@@ -1,0 +1,46 @@
+.info-section
+  // background-image: url('../images/info-section-bg.jpg')
+  // background-repeat: no-repeat
+  // background-position: center
+  // background-size: cover
+  background: linear-gradient(169deg, #e1e1e1 0%, #ffffff 100%);
+
+  &__container
+    position relative
+    padding 20px 0
+    text-align: center
+    color: $color-carbonic
+    +above($breakpoints.sm)
+      text-align: start
+      padding 40px 0 30px
+    +above($breakpoints.md)
+      padding 60px 0 50px
+    +above($breakpoints.xxl)
+      padding 90px 0 74px
+
+  &__box
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 15px
+    +above($breakpoints.sm)
+      flex-direction: row
+      align-items: flex-start
+      gap: 90px
+    +above($breakpoints.md)
+      gap: 120px
+    +above($breakpoints.xxl)
+      gap: 186px
+
+  &__text
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    +above($breakpoints.sm)
+      align-items: flex-start
+      gap: 15px
+    +above($breakpoints.md)
+      gap: 20px
+    +above($breakpoints.xxl)
+      gap: 24px

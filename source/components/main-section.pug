@@ -1,0 +1,44 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.font-w-light.font-s-38
+        | Зарабатывайте 
+        br
+        span.font-w-semi-bold от 150 000 рублей 
+        br.no-br
+        | ежемесячно
+      .main-section__sub-title.font-s-60-a
+        | на собственном 
+        br
+        span.font-w-semi-bold.color-gold-e2
+          | агентстве 
+          br.no-br
+          | недвижимости
+      .main-section__bottom
+        .main-section__bottom-card-wrapper
+          .main-section__bottom-card
+            img.main-section__bottom-img(src="images/main-section-bottom-img.png" loading="lazy" width="216" height="216" alt="image")
+            .font-s-18.color-gold-e2
+              | Запустите 
+              br.no-br
+              | работу бизнеса 
+              br.no-br
+              | по франшизе 
+              br.no-br
+              span.font-w-semi-bold
+                | «PROЖилье» 
+                br.no-br
+                | всего за 19 дней
+        .main-section__bottom-feedback
+          .font-s-20-a
+            | Получите подробную 
+            br.no-br
+            | презентацию франшизы и план 
+            br.no-br
+            | запуска агентства в 1 клик
+          form.main-section__form(data-feedback-form)
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+            input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+            input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+            button.btn(type="submit") Получить

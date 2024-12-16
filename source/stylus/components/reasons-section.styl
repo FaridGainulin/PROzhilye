@@ -1,0 +1,138 @@
+.reasons-section
+  background-image: url('../images/reasons-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #E1E1E1
+  overflow hidden
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      padding 30px 0
+    +above($breakpoints.md)
+      padding 60px 0
+    +above($breakpoints.xxl)
+      padding 90px 0 107px
+
+  &__title
+    color: $color-carbonic
+    padding 0 0 20px
+    +above($breakpoints.sm)
+      padding 0 0 30px
+    +above($breakpoints.md)
+      padding 0 0 50px
+    +above($breakpoints.xxl)
+      padding 0 0 63px
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-wrap: wrap
+      gap: 30px 10px
+    +above($breakpoints.md)
+      gap: 40px 20px
+    +above($breakpoints.xxl)
+      gap: 48px 20px
+
+  &__card
+    position relative
+    width 280px !important
+    height: 130px
+    background: linear-gradient(167.36deg, rgb(40, 40, 40) 18.386%,rgb(79, 75, 72) 94.859%)
+    border-radius: 10px
+    padding 20px 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content space-between
+    +above($breakpoints.sm)
+      align-items: flex-start
+      width: 324px !important;
+      height: 190px;
+      border-radius: 13px
+      padding 30px 5px 30px 30px
+    +above($breakpoints.md)
+      width: 420px !important;
+      height: 250px;
+      border-radius: 16px
+      padding 40px 5px 40px 40px
+    +above($breakpoints.xxl)
+      width 480px !important
+      height: 300px
+      border-radius: 20px
+      padding 51px 5px 50px 50px
+
+  &__card-icon
+    position: absolute
+    width: 60px;
+    height: auto;
+    top: -24px;
+    left: 0;
+    +above($breakpoints.sm)
+      width: 80px;
+      top: -32px;
+      left: 5px;
+    +above($breakpoints.md)
+      width: 110px;
+      top: -45px;
+      left: 5px;
+    +above($breakpoints.xxl)
+      width: 138px;
+      top: -56px;
+      left: 7px;
+
+  &__card-title
+    color: #DDB685
+
+  &__card-text
+    color: #FCECDC
+
+  &__bottom
+    position relative
+    z-index 1
+    color: $color-carbonic
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    +above($breakpoints.sm)
+      margin-top: 40px;
+      flex-direction: row;
+      gap: 53px;
+    +above($breakpoints.md)
+      margin-top: 50px;
+      gap: 116px;
+    +above($breakpoints.xxl)
+      margin-top 72px
+      gap: 70px
+
+  &__btn
+    width 280px !important
+    +above($breakpoints.sm)
+      width 200px !important
+    +above($breakpoints.md)
+      width 240px !important
+    +above($breakpoints.xxl)
+      width 280px !important
+
+  &__img
+    position: absolute
+    width: 236px;
+    height: auto;
+    bottom: 0px;
+    right: -194px;
+    +above($breakpoints.sm)
+      width: 360px;
+      bottom: 0px;
+      right: -217px;
+    +above($breakpoints.md)
+      width: 470px;
+      right: -267px;
+    +above($breakpoints.xxl)
+      width 670px
+      right: -370px

@@ -1,0 +1,38 @@
+section.details-section
+  .wrapper
+    .details-section__container
+      h2.details-section__title.font-s-60
+        | Погрузитесь 
+        br.no-br
+        span.font-w-semi-bold.color-gold-d4
+          | в детали ведения 
+          br.no-br
+          | бизнеса
+      .details-section__sub-title.font-w-medium.font-s-24
+        | Запишитесь на консультацию, 
+        br
+        | где мы расскажем вам:
+      .swiper-bullet
+        .details-section__cards.swiper-wrapper
+          .details-section__card.swiper-slide
+            .details-section__card-dot
+            .font-w-light.font-s-20 Кто ваша целевая аудитория и как ее привлечь
+          .details-section__card.swiper-slide
+            .details-section__card-dot
+            .font-w-light.font-s-20 На что обращать внимание при ценообразовании
+          .details-section__card.swiper-slide
+            .details-section__card-dot
+            .font-w-light.font-s-20 Как правильно позиционировать себя на рынке
+          .details-section__card.swiper-slide
+            .details-section__card-dot
+            .font-w-light.font-s-20 Что будет входить в ваши стартовые инвестиции
+          .details-section__card.swiper-slide
+            .details-section__card-dot
+            .font-w-light.font-s-20 Как быстро вы выйдете на стабильную чистую прибыль
+        .bullet-pagination
+      form.details-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn(type="submit") Записаться
+      img.details-section__img(src="images/details-section-img.png" loading="lazy" width="1500" height="1594" alt="image")
